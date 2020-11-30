@@ -13,16 +13,15 @@ function handleClick(e) {
 function greet (timeinput) {
   let HH = parseInt(timeinput.split(":")[0],10);
   if (HH < 12) {
-    return "Good Morning";
-  } else if (HH > 12 && HH < 17) {
-    return "Good Afternoon"; 
-  } else {
-    return "Good Evening";
-  }
+    return "Good Morning";}
+  else if (HH > 12 && HH < 17) {
+    return "Good Afternoon";}
+  else {
+    return "Good Evening";}
 }
 
 /* Write your implementation of displayMessage() */
 function displayMessage (sometext) {
-  var element = document.getElementById("greeting");
+  let element = document.getElementById("greeting");
   element.innerText = `${sometext}`;
 }
